@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - NexusVPN</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --accent-cyan: #00e5ff;
+            --accent-violet: #7c4dff;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 24px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 36px 48px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+        }
+        h1 {
+            color: var(--accent-cyan);
+            font-size: 2.2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 16px;
+        }
+        h2 {
+            color: var(--accent-violet);
+            font-size: 1.4rem;
+            margin-top: 32px;
+        }
+        p, li {
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+        .effective-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+        .highlight-box {
+            background: rgba(0, 229, 255, 0.08);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 16px 20px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #21262d;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>NexusVPN Privacy Policy</h1>
+    <div class="effective-date">Effective Date: November 12, 2026 | Version: 1.0.0 | Package ID: <code>com.tagsys.nexusvpn</code> | Publisher: TAG Systems (Qatar)</div>
+
+    <div class="highlight-box">
+        <strong>Our Core Commitment:</strong> NexusVPN (operated by TAG Systems) adheres to a strict <strong>Zero-Logs Policy</strong>. We do not monitor, record, log, or store your browsing traffic, DNS queries, online destinations, data payloads, or IP addresses.
+    </div>
+
+    <h2>1. Overview & Service Purpose</h2>
+    <p>
+        NexusVPN (Package: <code>com.tagsys.nexusvpn</code>) is an enterprise-grade virtual private network application developed by TAG Systems (Qatar). It provides encrypted, tamper-resistant data tunnels across public, cellular, and untrusted networks. This Privacy Policy describes how NexusVPN handles data in connection with our Android application and backend gateways.
+    </p>
+
+    <h2>2. Android VpnService Prominent Disclosure & Justification</h2>
+    <p>
+        In accordance with Google Play Developer Program Policies, NexusVPN prominently discloses its use of the Android <code>VpnService</code> API:
+    </p>
+    <ul>
+        <li><strong>Core Functionality:</strong> NexusVPN requires Android's <code>VpnService</code> to construct a secure, encrypted system-level virtual TUN interface. Without this service, the application cannot establish a VPN tunnel or protect device traffic.</li>
+        <li><strong>Cryptographic Protection:</strong> All outbound and inbound network packets routed through the TUN interface are encrypted using modern cryptographic standards (AES-256-GCM or ChaCha20-Poly1305).</li>
+        <li><strong>Leak Protection & DNS:</strong> Traffic is guarded against IPv4/IPv6 leaks, and DNS requests are routed exclusively through private, encrypted DNS resolvers (Cloudflare 1.1.1.1, Google Public DNS, or Quad9).</li>
+        <li><strong>No Traffic Inspection:</strong> <code>VpnService</code> is utilized solely for transport encryption. We never inspect, filter for commercial gain, inject advertisements into, or monetize your encrypted payload.</li>
+    </ul>
+
+    <h2>3. Information We Collect (and Do Not Collect)</h2>
+    <h3>A. What We Never Collect (Zero-Logs Guarantee)</h3>
+    <ul>
+        <li>No browsing history, URLs, or visited websites.</li>
+        <li>No DNS lookup history.</li>
+        <li>No payload data, files, or application traffic contents.</li>
+        <li>No association between real source IP addresses and outbound gateway activity.</li>
+    </ul>
+
+    <h3>B. Account Information (Voluntary)</h3>
+    <p>
+        When you create an account to access private gateway clusters, we securely store:
+    </p>
+    <ul>
+        <li><strong>Username & Email:</strong> Used exclusively for session authentication, token verification, and password recovery.</li>
+        <li><strong>Session Access Tokens:</strong> Cryptographically signed tokens stored in your device's private storage (DataStore) to maintain your login session.</li>
+    </ul>
+
+    <h2>4. Account & Data Deletion Rights</h2>
+    <p>
+        We respect your absolute right to control and permanently delete your personal information:
+    </p>
+    <ul>
+        <li><strong>In-App Deletion:</strong> You can permanently delete your account and all associated records directly inside the app by navigating to <code>Account &gt; Account &amp; Data Deletion &gt; Delete NexusVPN Account &amp; Data</code>.</li>
+        <li><strong>Web Portal Deletion:</strong> You may also submit an automated deletion request anytime at our self-service portal: <a href="https://srv.nsoc.sbs/if/user/#/settings;page-delete-account" target="_blank">https://srv.nsoc.sbs/if/user/#/settings;page-delete-account</a> or through our primary domain <a href="https://nsoc.sbs" target="_blank">https://nsoc.sbs</a>.</li>
+        <li><strong>Immediate Purge:</strong> When an account is deleted, all stored user credentials, email associations, active session tokens, and access authorizations are immediately and permanently erased from our databases.</li>
+    </ul>
+
+    <h2>5. Data Security & Storage Practices</h2>
+    <p>
+        All authentication requests communicate exclusively over TLS 1.3 with forward secrecy. Sensitive local data on your Android device (such as tokens and gateway configurations) is isolated within the application's protected sandbox directory and cannot be accessed by other installed applications.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+        NexusVPN does not knowingly collect personal identifiable information from children under the age of 13. If you become aware that a child has provided us with personal information, please contact us immediately.
+    </p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>
+        We may update our Privacy Policy periodically to reflect service enhancements or regulatory updates. Any revisions will be published within the app and on this page with an updated effective date.
+    </p>
+
+    <h2>8. Contact Us & Publisher Information</h2>
+    <p>
+        If you have questions, feedback, or privacy-related requests regarding this policy or the NexusVPN application (<code>com.tagsys.nexusvpn</code>), please reach out to:
+    </p>
+    <ul>
+        <li><strong>Developer & Publisher:</strong> TAG Systems</li>
+        <li><strong>Country of Operation:</strong> Qatar</li>
+        <li><strong>Official Contact Email:</strong> <a href="mailto:2agsystems@gmail.com">2agsystems@gmail.com</a></li>
+        <li><strong>Technical Support:</strong> <a href="mailto:support@nsoc.sbs">support@nsoc.sbs</a> / <a href="mailto:privacy@nsoc.sbs">privacy@nsoc.sbs</a></li>
+        <li><strong>Gateway Management:</strong> <a href="https://srv.nsoc.sbs" target="_blank">https://srv.nsoc.sbs</a> / <a href="https://nsoc.sbs" target="_blank">https://nsoc.sbs</a></li>
+    </ul>
+</div>
+</body>
+</html>
+
